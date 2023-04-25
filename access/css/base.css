@@ -1,0 +1,15 @@
+:root{
+    --primary-color: rgb(86, 57, 19);
+    --blue-color: #0AAFF1;
+    --white-color: #fff;
+    --black-color: #000;
+    --bottom-color: rgb(252, 174, 39);
+    --height-header: 100px;
+    --width-content:1200px;
+    --distance-logo: 50px;
+    --width-bottom: 100px;
+    --height-bottom: 50px;
+    --font-icon:20px;
+    --width-search:300px;
+    --font-size-title: 15px;
+}
