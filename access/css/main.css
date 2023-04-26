@@ -8,6 +8,10 @@
     overflow: hidden;
 }
 
+html{
+    scroll-behavior: smooth;
+}
+
 body {
     font-size: var(--font-size-title);
     font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
