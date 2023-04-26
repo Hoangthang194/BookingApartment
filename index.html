@@ -26,12 +26,15 @@
                     </div>
                     <div class="header-choice">
                         <ul class="header-sub-list">
-                            <li class="header-sub-list-item"><a href="#Home" class="header-sub-list-link">HOME</a></li>
-                            <li class="header-sub-list-item"><a href="#Tour" class="header-sub-list-link">TOUR</a></li>
-                            <li class="header-sub-list-item"><a href="#Booking" class="header-sub-list-link">BOOKING</a></li>
-                            <li class="header-sub-list-item"><a href="#Ticket" class="header-sub-list-link">TICKET</a></li>
-                            <li class="header-sub-list-item"><a href="#Food" class="header-sub-list-link">FOOD</a></li>
+                            <li class="header-sub-list-item header-sub-list-item--mobile"><a href="#Home" class="header-sub-list-link">HOME</a></li>
+                            <li class="header-sub-list-item header-sub-list-item--mobile"><a href="#Tour" class="header-sub-list-link">TOUR</a></li>
+                            <li class="header-sub-list-item header-sub-list-item--mobile"><a href="#Booking" class="header-sub-list-link">BOOKING</a></li>
+                            <li class="header-sub-list-item header-sub-list-item--mobile"><a href="#Ticket" class="header-sub-list-link">TICKET</a></li>
+                            <li class="header-sub-list-item header-sub-list-item--mobile"><a href="#Food" class="header-sub-list-link">FOOD</a></li>
                         </ul>
+                        <div class="close-icon">
+                            <i class="close-icon-sub fa-solid fa-close"></i>
+                        </div>
                     </div>
                     
                     <div class="header-search">
@@ -159,7 +162,7 @@
                                 </div>
                             </div>
                             <div class="booking-menu-item">
-                                <img src="/access/img/C2119.jpg" alt="" class="booking-item-list">
+                                <img src="/access/img/B1719.jpg" alt="" class="booking-item-list">
                                 <div class="sub-menu-booking">
                                     <div class="description">
                                         <div class="title-description">
@@ -266,12 +269,22 @@
         </div>
 
     </div>
+    <script>
+        var btnSearch = document.querySelector('.list-menu');
+        var  menuList= document.querySelector('.header-choice');
+        var closerMenu = document.querySelector('.close-icon');
 
+        btnSearch.onclick= function(){
+            menuList.classList.add('open');
+            closerMenu.classList.add('show');
+        }
 
+        closerMenu.onclick = function(){
+            menuList.classList.remove('open');
+            closerMenu.classList.remove('show');
+        }
+
+    
+    </script>
 </body>
-
-<!-- footer -->
-<footer>
-
-</footer>
 </html>

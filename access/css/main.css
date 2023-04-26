@@ -66,7 +66,9 @@ body {
     display: flex;
     justify-content: space-evenly;
     align-items: center;
+    animation: headerFadeIn ease 0.3s ;
 }
+
 
 .header-sub-list-link{
     text-decoration: none;
@@ -113,7 +115,7 @@ body {
     width: 50px;
 }
 
-.header-sub-list-item:hover, .shopping-cart:hover, .account:hover, .list-menu:hover{
+.header-sub-list-item:hover, .shopping-cart:hover, .account:hover, .list-menu:hover, .close-icon-sub:hover{
     background-color:var(--bottom-color);
     cursor: pointer;
 }
@@ -124,6 +126,41 @@ body {
 
 .list-menu{
     display: none;
+}
+
+.header-choice.open{
+    display: block;
+    }
+
+
+@keyframes headerFadeIn {
+    from{
+        transform: translateY(-100px);
+    }
+    to{
+        transform: translateY(0);
+    }
+}
+
+.close-icon{
+    display: none;
+}
+
+.close-icon.show{
+    display: block;
+}
+
+.close-icon-sub{
+    display: block;
+    position: absolute;
+    font-size: 20px;
+    color: var(--primary-color);
+    top: 0; 
+    right: 0;
+    z-index: 444;
+    padding: 16px;
+    transition: all 0.2s linear;
+    border-radius: 5px;
 }
 
 /* ================Slider============= */
@@ -193,18 +230,18 @@ body {
 
 
 .Tour-list{
-    padding: 30px 0px;
+    padding: 30px -8px;
     display: flex;
-    margin: 0 -8px;
 }
 
 .Tour-list-item{
     width: 100%;
     padding: 0px 8px;
-    box-shadow: 5px 5px 5px #ccc;
+    margin: 36px 0;
+    box-shadow: 1px 5px 5px #ccc;
     border-radius: 10px;
-    margin-left: 8px;
     transition: all 0.3s linear;
+
 }
 
 .Tour-list-item:hover{
@@ -264,7 +301,7 @@ body {
 .booking-sub{
     position: relative;
     width: 100%;
-    background-image: url("/access/img/thiet-ke-noi-that-chung-cu-bia.jpg");
+    background-image: url("../img/thiet-ke-noi-that-chung-cu-bia.jpg");
     background-size: cover;
     background-position: center;
     padding-bottom: 30px;
@@ -304,6 +341,7 @@ body {
 }
 
 .title-description{
+    font-size: 16px;
     font-weight: 700;
 }
 
@@ -344,7 +382,7 @@ body {
 .img-item-plane{
     width: 100%;
     height: 100%;
-    background-image: url("/access/img/vemaybay1.jpg");
+    background-image: url("../img/vemaybay1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: 80%;
@@ -429,7 +467,7 @@ body {
 .food-container{
     width: 100%;
     position: relative;
-    background-image: url("/access/img/Food1.jpg");
+    background-image: url("../img/Food1.jpg");
     background-size: cover;
     background-repeat: no-repeat;
     background-position: center;
